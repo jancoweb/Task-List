@@ -33,21 +33,13 @@ function getTasks(){
   }
 
   tasks.forEach(function(task){
-     // create LI ELEMENT
   const li = document.createElement('li');
-  // add a class
   li.className = 'collection-item';
-  // create text node and append to li
   li.appendChild(document.createTextNode(task));
-  // create new link element[
   const link = document.createElement('a');
-  // add class
   link.className = 'delete-item secondary-content';
-  // add icon html
   link.innerHTML = '<i class="fa fa-remove"></i>';
-  // append thje link to li
   li.appendChild(link);
-  // append li to ul
   taskList.appendChild(li);
   })
 
